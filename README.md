@@ -7,22 +7,44 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 
 
 #### Global functionalities
-- Edit Text **coreCanvas.editText()**
 - Zoom In **coreCanvas.zoomIn()**
 - Zoom Out **coreCanvas.zoomOut()**
-- Move Canvas **coreCanvas.zoomIn()**
-- Delete **coreCanvas.delete()**
-- Copy **coreCanvas.copy()**
-- Paste **coreCanvas.paste()**
-- Add Grid **coreCanvas.addGrid()**
-- Remove Grid **coreCanvas.removeGrid()**
-- Select All **coreCanvas.selectAll()**
+- Open Move Canvas Mode **coreCanvas.openMoveMode()**
+- Close Move Canvas Mode **coreCanvas.closeMoveMode()**
 
-#### Arrage tools 
-- Send to Back **coreCanvas.sendToBack()**
-- Send to Front **coreCanvas.sendToFront()**
-- Send Backward **coreCanvas.sendToBackward()**
-- Send Frontward **coreCanvas.sendToFrontward()**
+#### Layer Options
+- Get all layers  **coreCanvas.getLayers()**
+- Select All **coreCanvas.selectAll()**
+- Add text  **coreCanvas.newFontElement()**
+- Add resource/shape  **coreCanvas.newElement()**
+- Open edit mode **coreCanvas.element.openEditMode()**
+- Close edit mode **coreCanvas.element.closeEditMode()**
+- Lock  **coreCanvas.element.lock()**
+- Hidden  **coreCanvas.element.hide()**
+- Visible  **coreCanvas.element.show()**
+- Delete **coreCanvas.element.delete()**
+- Copy **coreCanvas.element.copy()**
+- Paste **coreCanvas.element.paste()**
+- Send to Back **coreCanvas.element.sendToBack()**
+- Send to Front **coreCanvas.element.sendToFront()**
+- Send Backward **coreCanvas.element.sendToBackward()**
+- Send Frontward **coreCanvas.element.sendToFrontward()**
+- Actual Layer Colors **coreCanvas.element.getColors()**
+- Reset Layer Colors **coreCanvas.element.resetColors()**
+- Set Layer Color **coreCanvas.element.setColors()**
+Transformation options
+- Rotate **coreCanvas.element.rotate()**
+- Opacity **coreCanvas.element.opacity()**
+- Size **coreCanvas.element.scale()** 
+- Mirror Horizontal **coreCanvas.element.mirrorX()**
+- Mirror Vertical **coreCanvas.element.mirrorY()**
+- Shadow on/off **coreCanvas.element.switchShadow()**
+- Edit shadow **coreCanvas.element.editShadow()**
+Typographics layers
+- Font Family **coreCanvas.element.setFontFamily()**
+- Font Size **coreCanvas.element.setFontSize()**
+- Font Color  **coreCanvas.element.setFontColor()**
+- Text Align  **coreCanvas.element.setFontAlign()**
 
 #### Color Palettes
 - Solid colors & gradients colors
@@ -30,32 +52,7 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Reset Colors **coreCanvas.resetColors()**
 - Color Assign **coreCanvas.setColors()**
 - Global **coreCanvas.switchToGlobalColors()**
-- Especific **coreCanvas.switchToSpecificColors()**			
-
-#### Transformation tools
-- Rotate **coreCanvas.rotate()**
-- Opacity **coreCanvas.opacity()**
-- Size **coreCanvas.scale()** 
-- Mirror Horizontal **coreCanvas.mirrorX()**
-- Mirror Vertical **coreCanvas.mirrorY()**
-- Shadow on/off **coreCanvas.switchShadow()**
-- Edit shadow **coreCanvas.editShadow()**
-
-#### Text Options
-- Font Family **coreCanvas.setFontFamily()**
-- Font Size **coreCanvas.setFontSize()**
-- Font Color  **coreCanvas.setFontColor()**
-- Text Align  **coreCanvas.setFontAlign()**
-- Add Text  **coreCanvas.newFontElement()**
-
-#### Layer Options
-- Get all layers  **coreCanvas.getLayers()**
-- Lock  **coreCanvas.lockLayer()**
-- Hidden  **coreCanvas.hideLayer()**
-- Visible  **coreCanvas.showLayer()**
-
-#### Shape & Resources
-- Add resource/shape  **coreCanvas.newElement()**
+- Especific **coreCanvas.switchToSpecificColors()**		
 
 #### Grid Options
 - Add Guides **coreCanvas.addGuides()**
@@ -65,6 +62,8 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 
 #### General Options
 - Load JSON Design **coreCanvas.loadJSON()** 
+- Load PNG File **coreCanvas.loadPNG()**
+- Load SVG File **coreCanvas.loadSVG()**  
 - Get JSON Data **coreCanvas.getJSON()**
 - Get PNG Base64  **coreCanvas.getPNG()**
 - Get SVG Data  **coreCanvas.getSVG()**
