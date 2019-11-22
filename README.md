@@ -7,7 +7,8 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 
 
 #### Global functionalities
-- Zoom In **coreCanvas.zoomIn()**
+- Zoom In **coreCanvas.zoomIn( point[optional] )**
+  parameter point = object { x: int, y: int }
 - Zoom Out **coreCanvas.zoomOut()**
 - Open Move Canvas Mode **coreCanvas.openMoveMode()**
 - Close Move Canvas Mode **coreCanvas.closeMoveMode()**
