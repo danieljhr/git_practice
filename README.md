@@ -41,6 +41,8 @@ Transformation options
 - Mirror Vertical **coreCanvas.element.mirrorY()**
 - Shadow on/off **coreCanvas.element.switchShadow()**
 - Edit shadow **coreCanvas.element.editShadow()**
+var {color: "red", blur: 50, offsetX: 50, offsetY: 30}
+
 Typographics layers
 - Font Family **coreCanvas.element.setFontFamily()**
 - Font Size **coreCanvas.element.setFontSize()**
