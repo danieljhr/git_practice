@@ -68,7 +68,7 @@ Typographics layers
 - Load PNG File **coreCanvas.loadPNG()**
 - Load SVG File **coreCanvas.loadSVG()**  
 - Get JSON Data **coreCanvas.getJSON()**
-- Get PNG Base64  **coreCanvas.getPNG()**
+- Get PNG Base64  **coreCanvas.getPNG()**  parameter width
 - Get SVG Data  **coreCanvas.getSVG()**
 
 #### Events handlers
