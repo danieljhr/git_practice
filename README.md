@@ -7,55 +7,15 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 
 
 #### Global functionalities
-- Zoom In **coreCanvas.zoomIn( point[optional] )**
-  parameter point = object { x: int, y: int }
+- Zoom In **coreCanvas.zoomIn( point[optional] )**  parameter point = object { x: int, y: int }
 - Zoom Out **coreCanvas.zoomOut()**
 - Open Move Canvas Mode **coreCanvas.openMoveMode()**
 - Close Move Canvas Mode **coreCanvas.closeMoveMode()**
-
-#### Layer Options
 - Get all layers  **coreCanvas.getLayers()**
 - Select All **coreCanvas.selectAll()**
-- Add text  **coreCanvas.newFontElement()**
 - Add resource/shape  **coreCanvas.newElement()**
-- Open edit mode **coreCanvas.element.openEditMode()**
-- Close edit mode **coreCanvas.element.closeEditMode()**
-- Lock  **coreCanvas.element.lock()**
-- Hidden  **coreCanvas.element.hide()**
-- Visible  **coreCanvas.element.show()**
-- Delete **coreCanvas.element.delete()**
-- Copy **coreCanvas.element.copy()**
-- Paste **coreCanvas.element.paste()**
-- Send to Back **coreCanvas.element.sendToBack()**
-- Send to Front **coreCanvas.element.sendToFront()**
-- Send Backward **coreCanvas.element.sendToBackward()**
-- Send Frontward **coreCanvas.element.sendToFrontward()**
-- Actual Layer Colors **coreCanvas.element.getColors()**
-- Reset Layer Colors **coreCanvas.element.resetColors()**
-- Set Layer Color **coreCanvas.element.setColors()**
-Transformation options
-- Rotate **coreCanvas.element.rotate()**
-- Opacity **coreCanvas.element.opacity()**
-- Size **coreCanvas.element.scale()** 
-- Mirror Horizontal **coreCanvas.element.mirrorX()**
-- Mirror Vertical **coreCanvas.element.mirrorY()**
-- Shadow on/off **coreCanvas.element.switchShadow()**
-- Edit shadow **coreCanvas.element.editShadow()**
-var {color: "red", blur: 50, offsetX: 50, offsetY: 30}
-
-Typographics layers
-- Font Family **coreCanvas.element.setFontFamily()**
-- Font Size **coreCanvas.element.setFontSize()**
-- Font Color  **coreCanvas.element.setFontColor()**
-- Text Align  **coreCanvas.element.setFontAlign()**
-
-#### Color Palettes
-- Solid colors & gradients colors
-- Actual Colors **coreCanvas.getColors()**
-- Reset Colors **coreCanvas.resetColors()**
-- Color Assign **coreCanvas.setColors()**
-- Global **coreCanvas.switchToGlobalColors()**
-- Especific **coreCanvas.switchToSpecificColors()**		
+- Add text  **coreCanvas.newFontElement()** var defaul { left:0, top: 0, fontSize: "12", fontFamily:"arial", fontWeight: null, fill: '#333', originX:"center", 	originY:"center",	lineHeight: 1.1, textAlign: "left"}
+- Global **coreCanvas.switchScopeColors()** global o especific
 
 #### Grid Options
 - Add Guides **coreCanvas.addGuides()**
@@ -64,12 +24,58 @@ Typographics layers
 - Snap to Grid **coreCanvas.switchSnap()**
 
 #### General Options
-- Load JSON Design **coreCanvas.loadJSON()** 
-- Load PNG File **coreCanvas.loadPNG()**
-- Load SVG File **coreCanvas.loadSVG()**  
-- Get JSON Data **coreCanvas.getJSON()**
-- Get PNG Base64  **coreCanvas.getPNG()**  parameter width
-- Get SVG Data  **coreCanvas.getSVG()**
+- Load JSON Design **coreCanvas.loadJSON(json[required])**  var json : json;
+- Load PNG File **coreCanvas.loadPNG(value[required])**  var idObjects : string base64;
+- Load SVG File **coreCanvas.loadSVG(value[required])**  var idObjects : string base64;
+- Get JSON Data **coreCanvas.getJSON()** return json
+- Get PNG Base64  **coreCanvas.getPNG(value[required])**  var medida : int
+- Get SVG Data  **coreCanvas.getSVG()** return svg string
+
+#### Color Palettes
+- Color Assign **coreCanvas.setColors()**
+- Reset Colors **coreCanvas.resetColors()**
+- Solid colors & gradients colors **pendiente pendiente**
+- Actual Colors **coreCanvas.getColors()**
+
+
+
+
+
+###Element
+- Open edit mode **coreCanvas.element.openEditMode()**
+- Close edit mode **coreCanvas.element.closeEditMode()**
+- Copy **coreCanvas.element.copy()**
+- Paste **coreCanvas.element.paste()**
+- Paste **coreCanvas.element.cloned()**
+- Lock  **coreCanvas.element.lock()**
+- unlock  **coreCanvas.element.unlock()** var **idObjects**
+- Hidden  **coreCanvas.element.hide()** 
+- Visible  **coreCanvas.element.show(id[required])** var idObjects : int
+- Delete **coreCanvas.element.delete(id[required])** var idObjects : int
+- Send to Back **coreCanvas.element.sendToBack()**
+- Send to Front **coreCanvas.element.sendToFront()**
+- Send Backward **coreCanvas.element.sendToBackward()**
+- Send Frontward **coreCanvas.element.sendToFrontward()**
+- Actual Layer Colors **coreCanvas.element.getColors()**
+- Reset Layer Colors **coreCanvas.element.resetColors()**
+- Set Layer Color **coreCanvas.element.setColors()**
+- Rotate **coreCanvas.element.rotate(angle[required])** var angle : int
+- Opacity **coreCanvas.element.opacity(opacity[required])** var opacity : int
+- Size **coreCanvas.element.scale(scaleX[require],scaleY[require])**  var scaleX : int, scaleY
+- Mirror Horizontal **coreCanvas.element.mirrorX()** return bool
+- Mirror Vertical **coreCanvas.element.mirrorY()** return bool
+- Shadow on/off **coreCanvas.element.switchShadow()**
+- Edit shadow **coreCanvas.element.editShadow()** var {color: "red", blur: 50, offsetX: 50, offsetY: 30}
+- Font Family **coreCanvas.element.setFontFamily(name[required])** var name string
+- Font Size **coreCanvas.element.setFontSize(sizeFont[required])** var sizeFont int
+- Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont string
+
+###Font Styles
+
+
+### Color Gradients
+
+
 
 #### Events handlers
 - Design loaded **coreCanvas.on("design-loaded", function )**
