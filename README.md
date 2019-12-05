@@ -41,7 +41,7 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 
 
 
-###Element
+### Element
 - Open edit mode **coreCanvas.element.openEditMode()**
 - Close edit mode **coreCanvas.element.closeEditMode()**
 - Copy **coreCanvas.element.copy()**
@@ -59,6 +59,7 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Actual Layer Colors **coreCanvas.element.getColors()**
 - Reset Layer Colors **coreCanvas.element.resetColors()**
 - Set Layer Color **coreCanvas.element.setColors()**
+- Shadow on/off **coreCanvas.element.setGradient(value)** var 
 - Rotate **coreCanvas.element.rotate(angle[required])** var angle : int
 - Opacity **coreCanvas.element.opacity(opacity[required])** var opacity : int
 - Size **coreCanvas.element.scale(scaleX[require],scaleY[require])**  var scaleX : int, scaleY
@@ -70,10 +71,16 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Font Size **coreCanvas.element.setFontSize(sizeFont[required])** var sizeFont int
 - Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont string
 
-###Font Styles
+### Font Styles
+- Text Fill  **coreCanvas.element.setSelectionStylesFontFill(FillFont[required])** var FillFont string
+- Text Fill  **coreCanvas.element.setSelectionStylesFontWeight(FontWeight[required])** var FontWeight string
+- Text Fill  **coreCanvas.element.setSelectionStylesFontSize(FontSize[required])** var FontSize int
+- Text Fill  **coreCanvas.element.setSelectionStylesFontUnderline(FontUnderline[required])** var FontUnderline Bool
+- Text Fill  **coreCanvas.element.setSelectionStylesFontLinethrough(Linethrough[required])** var Linethrough Bool
 
 
-### Color Gradients
+
+
 
 
 
