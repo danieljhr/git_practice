@@ -1,10 +1,7 @@
-
-
 ```
 var coreCanvas = new CoreFabric("id_contenedor");
 ```
 Las modificaciones del canvas se harán a traves de funciones por ende la instancia debe tener funciones especificas para cada acción en el canvas. Todas las funciones deben ser Promesas para manejar la reactividad.
-
 
 #### Global functionalities
 - Zoom In **coreCanvas.zoomIn( point[optional] )**  parameter point = object { x: int, y: int }
@@ -37,9 +34,8 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Solid colors & gradients colors **pendiente pendiente**
 - Actual Colors **coreCanvas.getColors()**
 
-
-
-
+#### Color Element Epecific
+-Color **coreCanvas.element.colorElementEspecific(colorBase[require], colorUpdate[require])**  var colorBase : string, colorUpdate : string
 
 ### Element
 - Open edit mode **coreCanvas.element.openEditMode()**
@@ -67,9 +63,13 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Mirror Vertical **coreCanvas.element.mirrorY()** return bool
 - Shadow on/off **coreCanvas.element.switchShadow()**
 - Edit shadow **coreCanvas.element.editShadow()** var {color: "red", blur: 50, offsetX: 50, offsetY: 30}
-- Font Family **coreCanvas.element.setFontFamily(name[required])** var name string
-- Font Size **coreCanvas.element.setFontSize(sizeFont[required])** var sizeFont int
-- Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont string
+- Font Family **coreCanvas.element.setFontFamily(name[required])** var name : string
+- Font Size **coreCanvas.element.setFontSize(sizeFont[required])** var sizeFont : int
+- Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont : string
+- Align Element **coreCanvas.element.setAlign(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
+- Align Element **coreCanvas.element.alignSelectedToObjects(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
+
+
 
 ### Font Styles
 - Text Color  **coreCanvas.element.setSelectionStylesFontColor(FillFont[required])** var FillFont string
@@ -78,12 +78,6 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Text FontSize  **coreCanvas.element.setSelectionStylesFontSize(FontSize[required])** var FontSize int
 - Text FontUnderline  **coreCanvas.element.setSelectionStylesFontUnderline(FontUnderline[required])** var FontUnderline Bool
 - Text Linethrough  **coreCanvas.element.setSelectionStylesFontLinethrough(Linethrough[required])** var Linethrough Bool
-
-
-
-
-
-
 
 #### Events handlers
 - Design loaded **coreCanvas.on("design-loaded", function )**
