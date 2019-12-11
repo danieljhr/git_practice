@@ -13,6 +13,10 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Add resource/shape  **coreCanvas.newElement()**
 - Add text  **coreCanvas.newFontElement()** var defaul { left:0, top: 0, fontSize: "12", fontFamily:"arial", fontWeight: null, fill: '#333', originX:"center", 	originY:"center",	lineHeight: 1.1, textAlign: "left"}
 - Global **coreCanvas.switchScopeColors()** global o especific
+- Create Undo Redo **coreCanvas.createUndoRedo()**
+- Action Undo Redo **coreCanvas.actionUndoRedo()** var num : int;
+- Save Cache Canvas **coreCanvas.saveCacheCanvas()**
+- Load Cache Canvas **coreCanvas.loadCacheCanvas()**
 
 #### Grid Options
 - Add Guides **coreCanvas.addGuides()**
@@ -68,6 +72,7 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont : string
 - Align Element **coreCanvas.element.setAlign(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
 - Align Element **coreCanvas.element.alignSelectedToObjects(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
+
 
 
 
