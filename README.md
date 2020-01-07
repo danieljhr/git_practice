@@ -72,6 +72,7 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Text Align  **coreCanvas.element.setFontAlign(AlignFont[required])** var AlignFont : string
 - Align Element **coreCanvas.element.setAlign(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
 - Align Element **coreCanvas.element.alignSelectedToObjects(ElementAlign[required])** var ElementAlign : string "top , middle, bottom, left, center, rigth"
+- Dimension Element **coreCanvas.element.dimensionSelectedObjects()** 
 
 
 
