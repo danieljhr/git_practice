@@ -85,6 +85,14 @@ Las modificaciones del canvas se harán a traves de funciones por ende la instan
 - Text FontUnderline  **coreCanvas.element.setSelectionStylesFontUnderline(FontUnderline[required])** var FontUnderline Bool
 - Text Linethrough  **coreCanvas.element.setSelectionStylesFontLinethrough(Linethrough[required])** var Linethrough Bool
 
+### Font Styles
+- Text Color  **coreCanvas.element.setSelectionStylesFontColor(FillFont[required])** var FillFont string
+- Text FontFamily  **coreCanvas.element.setSelectionStylesFontFamily(FontFamily[required])** var FontFamily string
+- Text FontWeight  **coreCanvas.element.setSelectionStylesFontWeight(FontWeight[required])** var FontWeight string
+- Text FontSize  **coreCanvas.element.setSelectionStylesFontSize(FontSize[required])** var FontSize int
+- Text FontUnderline  **coreCanvas.element.setSelectionStylesFontUnderline(FontUnderline[required])** var FontUnderline Bool
+- Text Linethrough  **coreCanvas.element.setSelectionStylesFontLinethrough(Linethrough[required])** var Linethrough Bool
+
 #### Events handlers
 - Design loaded **coreCanvas.on("design-loaded", function )**
 - Layer created **coreCanvas.on("layer-created", function )**
